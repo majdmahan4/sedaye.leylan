@@ -13,7 +13,7 @@ def get_client_ip(request):
 
 def is_iranian_ip(ip):
     try:
-        response = requests.get(f"https://ipinfo.io/{ip}/json?token=1fa07b3902021a")
+        response = requests.get(f"https://ipinfo.io/{ip}/json?token=a659e8a8d75d01")
         data = response.json()
         country = data.get("country", "")
         return country == "IR"
